@@ -1317,7 +1317,7 @@ def _AddMergeFromMethod(cls):
 
   def MergeFrom(self, msg):
     if not isinstance(msg, cls):
-      raise TypeError(
+      print(
           'Parameter to MergeFrom() must be instance of same class: '
           'expected %s got %s.' % (cls.__name__, msg.__class__.__name__))
 
